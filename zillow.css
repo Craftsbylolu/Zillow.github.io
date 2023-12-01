@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.753),rgba(4, 9, 30, 0.74)),url(img/VVIP.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.form-search form input{
+    margin-top: 40px;
+    width: 195px;
+    height: 25px;
+    border-radius: 10px;
+    padding: 0 0 0 5px;
+}
+.form-search img{
+    height: 30px;
+    width: 30px;
+    margin-top: 40px;
+}
+.navbar .logo img{
+    width:140px;
+    position:absolute;
+    top:10px;
+    left:30px;
+}
+.form-search{
+    display: flex;
+    padding: auto;
+    margin: auto;
+    justify-content: space-between;
+}
+.bar-text{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+.bar-text h1{
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 40px;
+}
+.bar-text p{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 5px;
+}
+.bar-btn{
+    margin: 20px auto 0;
+}
+.bar-btn a{
+    background:#3c49ff;
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+.bar-btn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    border-radius: 5px;
+    background: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+.bar-btn a:hover{
+    color: black;
+    font-size: 25px;
+}
+.bar-btn a:hover span{
+    width: 100%;
+}
+#sidenav{
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    right: -150px;
+    top: 0;
+    background: #3c49ff;
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul li{
+    font-size: 12px;
+    list-style: none;
+    margin: 25px 10px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#menubtn{
+    height: 50px;
+    width: 50px;
+    background:#3c49ff;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 5px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menubtn img{
+    width: 20px;
+    margin-top: 15px;
+}
+
+@media(max-width: 700px){
+    .navbar .logo img{
+        width: 80px;
+        position:absolute;
+        top:3.5%;
+        left:5%;
+    }
+    .navbar{
+        display: flex;
+        flex-basis: 30%;
+        justify-content: space-between;
+    }
+    .form-search form input{
+        margin-top: 30px;
+        width: 120px;
+        height: 20px;
+        border-radius: 10px;
+        padding: 0 5px;
+    }
+    .form-search img{
+        height: 25px;
+        width: 25px;
+        margin-top: 30px;
+    }
+    .bar-btn{
+        margin: 40px auto 0;
+    }
+    .bar-text{
+        text-align: center;
+        color: white;
+        padding-top: 100px;
+    }
+    .bar-text h1{
+        font-size: 20px;
+    }
+    .bar-text p{
+        font-size: 10px;
+    }
+    .bar-btn a{
+        font-size: 10px;
+        display: block;
+        margin: 10px auto;
+    }
+
+}
+#buy{
+    margin: 50px  50px;
+    border-style: outset;
+}
+#buy .buy{
+    display: flex;
+    flex-basis:25%;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.buy .buy-text{
+    display: block;
+}
+.buy-text h3{
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 40px;
+}
+.buy-text h3 span{
+    color: #3c49ff;
+}
+.buy-text p{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 15px;
+}
+.buy img{
+    width: 50%;
+    height: 30%;
+}
+#buy:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+    background-color: white;
+}
+.bar-btn1{
+    margin: 50px 25px;
+}
+.bar-btn1 a{
+    background:#3c49ff;
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+    text-align: center;
+}
+.bar-btn1 a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    border-radius: 5px;
+    background: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+.bar-btn1 a:hover{
+    color: black;
+    border: 2px solid #3c49ff;
+}
+.bar-btn1 a:hover span{
+    width: 100%;
+}
+@media(max-width: 700px){
+    .buy-text p{
+        display: none;
+    }
+    .bar-btn1{
+        margin: 20px 70px;
+    } 
+    .buy-text h3{
+        font-size: 25px;    
+    }
+    .buy img{
+        width: 80%;
+        height: 50%;
+    }
+}
+#sell{
+    margin: 50px  50px;
+    border-style: outset;
+}
+#sell .sell{
+    display: flex;
+    flex-basis:25%;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.sell .sell-text{
+    display: block;
+}
+.sell-text h3{
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 40px;
+}
+.sell-text h3 span{
+    color: #3c49ff;
+}
+.sell-text p{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 15px;
+}
+.sell img{
+    width: 50%;
+    height: 30%;
+}
+#sell:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+    background-color: white;
+}
+@media(max-width: 700px){
+    .sell-text p{
+        display: none;
+    }
+    .sell-text h3{
+        font-size: 25px;    
+    }
+    .sell img{
+        width: 80%;
+        height: 50%;
+    }
+}
+#rent{
+    margin: 50px  50px;
+    border-style: outset;
+}
+#rent .rent{
+    display: flex;
+    flex-basis:25%;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.rent .rent-text{
+    display: block;
+}
+.rent-text h3{
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 40px;
+}
+.rent-text h3 span{
+    color: #3c49ff;
+}
+.rent-text p{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 15px;
+}
+.rent img{
+    width: 50%;
+    height: 30%;
+}
+#rent:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+    background-color: white;
+}
+@media(max-width: 700px){
+    .rent-text p{
+        display: none;
+    }
+    .rent-text h3{
+        font-size: 25px;    
+    }
+    .rent img{
+        width: 80%;
+        height: 50%;
+    }
+}
